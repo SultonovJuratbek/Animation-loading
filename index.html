@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .loader {
+        width: 300px;
+        height: 300px;
+        border: 6px solid #e5e7eb;
+        border-top: 8px solid #3b82f6;
+        border-bottom: 10px solid rgb(15, 196, 220);
+        border-radius: 50%;
+        text-align: center;
+      }
+      .loader {
+        animation-name: spin;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        0% {
+          border: 3px solid red;
+        }
+        10% {
+          border: 3px solid rgb(248, 155, 6);
+        }
+        50% {
+          border: 5px solid rgb(8, 212, 62);
+        }
+        80% {
+          border: 10px solid rgb(239, 239, 0);
+        }
+        100% {
+          border: 15px solid rgb(0, 239, 24);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader"></div>
+  </body>
+</html>
